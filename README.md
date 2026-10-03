@@ -1,9 +1,14 @@
-# ☕ Enterprise Quantitative Risk Management & AI Procurement Strategy
-### تشریح پلتفرم مدیریت ریسک و استراتژی تامین مبتنی بر هوش مصنوعی
+🚀 **Live Production Environment:** [Click Here to Run the AI Risk Dashboard Live](https://streamlit.app)  (داشبورد پویای مدل 5)
+*(Interactive Web Application with Real-Time Regime Switching Dashboard for Executive Decision Makers)*
 
 ---
 
-## 📌 ۱. صورت مسئله موردی و اهداف آن (فارسی)
+# ☕ Enterprise Quantitative Risk Management & AI Procurement Strategy
+### پلتفرم جامع مدیریت ریسک کمی و استراتژی تامین مبتنی بر هوش مصنوعی(قابل توسعه)
+
+---
+
+## 📌 ۱. صورت مسئله و اهداف پروژه (فارسی)
 چالش استراتژیک این پروژه، مدیریت **ریسک موازی بازار (Dual Market Exposure)** در یک افق زمانی **۹۰ روزه** برای تامین **۵۰,۰۰۰ پوند** کالا است. این سبد تامین به طور هم‌زمان در معرض دو متغیر بحرانی قرار دارد:
 ۱. **ریسک جهانی کالا (Commodity Risk):** نوسانات غیرخطی و ساختاری قیمت جهانی کالا بر حسب دلار در هر پوند.
 ۲. **ریسک ماکروکونومیک داخلی (FX Risk):** نوسانات شدید، جهش‌های ناگهانی نرخ ارز و شوک‌های رژیم ارزی (ریال به دلار).
@@ -19,7 +24,7 @@
 * \(FX_t\): نرخ ارز داخلی به ریال/دلار (متغیر تصادفی)
 * ρ: ضریب همبستگی بین قیمت کالا و تغییرات ارز (کوواریانس دارایی‌ها)
 * λ: پارامتر شدت پرش پواسون (نشان‌دهنده شوک‌های ناگهانی و ناپیوسته بازار)
-* \(lpha_t\): ماتریس وزن‌های لایه توجه ترنسفورمر برای شناسایی روزهای پرریسک در زنجیره تامین
+* \(\alpha_t\): ماتریس وزن‌های لایه توجه ترنسفورمر برای شناسایی روزهای پرریسک در زنجیره تامین
 
 ---
 
@@ -34,6 +39,7 @@
 │   └── 📄 04_merton_jump_diffusion.py    # مدل‌سازی جهش‌های ناگهانی بازار با فرآیند پواسون
 └── 📁 02_Advanced_AI_Models (گروه دوم: مدل‌های پیشرفته هوش مصنوعی)
     ├── 📄 05_markov_switching_xgboost.py  # تشخیص تغییر رژیم بازار از آرام به انفجاری با یادگیری ماشین
+    │   └── 🌐 [Live Production App] ──> https://streamlit.app
     └── 📄 06_temporal_fusion_transformer.py # پیش‌بینی غیرخطی تندبادهای قیمتی با لایه توجه شبکه ترنسفورمر
 ```
 
@@ -65,6 +71,8 @@
 
 #### روش ۵: پیش‌بینی تغییر رژیم با مدل Markov Switching XGBoost
 * **فرآیند محاسباتی:** بازارها را به دو فاز **رژیم آرام** (کم نوسان) و **رژیم بحران** (انفجاری) تقسیم می‌کند. ویژگی‌های پیشرو شامل شتاب قیمت و خوشه‌بندی نوسانات وارد الگوریتم **XGBoost Classifier** شده تا احتمال سوییچ بازار به فاز بحران را ۷ الی ۱۰ روز زودتر پیش‌بینی کند.
+* **لینک اجرای زنده داشبورد:** برای تست و اجرای زنده این مدل به صورت آنلاین همراه با اسلایدرهای مدیریتی، روی لینک زیر کلیک کنید:
+  🔗 **[ورود به پلتفرم پویا و اجرای زنده داشبورد هوش مصنوعی](https://streamlit.app)**
 * **خروجی نموداری:** داشبورد تعاملی سیگنال ریسک هوش مصنوعی (۰ تا ۱۰۰٪) به همراه هایلایت قرمز رنگ مناطق شروع رژیم پرش قیمت.
 
 #### روش ۶: شبکه عصبی عمیق ترنسفورمر (Temporal Fusion Transformer - TFT)
@@ -112,6 +120,7 @@ The strategic challenge lies in managing **Dual Market Exposure Risk** within a 
 
 #### Method 5: Markov Switching XGBoost Risk Dashboard (`05_markov_switching_xgboost.py`)
 * **Process Flow:** Processes rolling statistical inputs through an **XGBoost Classifier** combined with a latent state transition matrix to predict structural shifts from "Calm" to "Crisis" market volatility regimes.
+* **Live Interactive Web App:** Access the operational simulation instantly at: 🔗 **[Live Streamlit Deployment](https://streamlit.app)**
 * **Visualization Output:** An interactive web dashboard plotting a **Pre-Crisis Risk Signal (0-100%)** that flags transitions 7 to 10 days in advance.
 
 #### Method 6: Deep Temporal Fusion Transformer - TFT (`06_temporal_fusion_transformer.py`)
