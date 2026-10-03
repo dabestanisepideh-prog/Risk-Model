@@ -39,7 +39,7 @@
 │   └── 📄 04_merton_jump_diffusion.py    # مدل‌سازی جهش‌های ناگهانی بازار با فرآیند پواسون
 └── 📁 02_Advanced_AI_Models (گروه دوم: مدل‌های پیشرفته هوش مصنوعی)
     ├── 📄 05_markov_switching_xgboost.py  # تشخیص تغییر رژیم بازار از آرام به انفجاری با یادگیری ماشین
-    │   └── 🌐 [Live Production App] ──> https://streamlit.app
+    │   └── 🌐 [Live Production App] ──> https://risk-model-lgz3wpdknf8zfzjsywrrzs.streamlit.app/
     └── 📄 06_temporal_fusion_transformer.py # پیش‌بینی غیرخطی تندبادهای قیمتی با لایه توجه شبکه ترنسفورمر
 ```
 
