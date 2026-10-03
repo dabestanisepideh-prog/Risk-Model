@@ -1,4 +1,4 @@
-🚀 **Live Production Environment:** [Click Here to Run the AI Risk Dashboard Live](https://streamlit.app)  (لینک داشبورد پویای مدل 5)
+🚀 **Live Production Environment:** [Click Here to Run the AI Risk Dashboard Live](https://risk-model-lgz3wpdknf8zfzjsywrrzs.streamlit.app/)  (لینک داشبورد پویای مدل 5)
 *(Interactive Web Application with Real-Time Regime Switching Dashboard for Executive Decision Makers)*
 
 ---
